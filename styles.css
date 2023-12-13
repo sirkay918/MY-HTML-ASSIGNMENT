@@ -1,0 +1,194 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+#part1{
+    height: 42vh;
+    background-image: url(city.jpg);
+    background-size: 100% 42vh;     
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin: 5px 0 0 0;
+    padding: 5px 0 0 0;
+}
+#bootstrap-text{
+    background-color: transparent;
+    color: rgb(241, 237, 237);
+    border: none;
+    background: none;
+    width: 150px;
+    height: 27px;
+    margin-top: 0;
+    margin-left: 0;
+}
+#download-now{
+    background-color: rgb(244, 98, 98);
+    color: white;
+    border-radius: 19px;
+    width: 150px;
+    height: 27px;
+    border-color: transparent;
+    margin-right: 10px;
+    margin-top: 0;
+}
+#download-gall{
+    background-color: rgb(16, 148, 201); 
+    color: white;
+    border-radius: 19px;
+    width: 150px;
+    height: 27px;
+    border-color: transparent;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+  #content1 {
+    color: rgb(255, 255, 255);
+    margin: 0 auto ;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+  }
+#main-text{    
+    margin: 5px auto ;
+    display: grid;
+}
+#download-now:hover{
+    background-color: rgb(80, 50, 55);
+}
+#download-gall:hover{
+    background-color: rgb(8, 4, 58);
+}
+  #part2{
+    height: 58vh;
+}
+#content1 + h1{
+    text-decoration: solid;
+    
+}
+#all-button, #beau-button, #creative-button, #cool-button, #awesome-button{
+    
+    background-color: white;
+    color: rgb(16, 148, 201);
+    border-radius: 19px;
+    width: 100px;
+    height: 27px;
+    border-color: rgb(16, 148, 201) ;
+
+}
+#all-button {
+    background-color: rgb(16, 148, 201);
+    color: rgb(255, 255, 255);
+    border-color: white;
+    width: 70px;
+}
+#beau-button:hover{
+    background-color: rgb(16, 148, 201);
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+#creative-button:hover{
+    background-color: rgb(16, 148, 201);
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+#cool-button:hover{
+    background-color: rgb(16, 148, 201);
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+#awesome-button:hover{
+    background-color: rgb(16, 148, 201);
+    color: rgb(255, 255, 255);
+    border-color: white;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    width: 45%;
+    margin: 0 auto ;
+   
+  }
+
+  .image {
+    width: 90%; 
+    /* height: 85%; */
+    margin: 35px 0 0 15px;
+  }
+  /* .image-grid .image:nth-child(2n + 1) {
+    width: 85%;
+    height: 80%;
+}
+.image-grid .image.image.image.image.image.image.image.image:nth-child(6n + 1) {
+    width: 85%;
+    height: 80%;
+} */
+  #content2 {
+    margin: 0 auto ;
+    padding: 0 auto;
+    align-items: center;
+    text-align: center;    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+@media only screen and (max-width: 768px) {
+    #content1 {
+        width: 70%;
+    }
+    
+    .image-grid {
+        width: 70%;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto ;
+    }
+    .image {
+        margin: 25px 0 0 5px;
+        width: 100%;
+    }
+    #main-text {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    #content1 {
+        width: 90%;
+    }
+    
+    .image-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto ;
+    }
+
+    .image {
+        margin: 15px 0 0 5px;
+        width: 100%;
+    }
+    #main-text {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        margin: 0 auto ;
+    }
+}
+#options button {
+    margin-right: 10px; 
+    border: 1px solid rgb(16, 148, 201); 
+    padding: 5px 15px; 
+}
+
+#options button:last-child {
+    margin-right: 0; 
+}
